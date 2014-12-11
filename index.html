@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery experiments</title>
+	<script src="script.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css"
+</head>
+
+<body>
+	<div class="top">
+	<p>jquery experiments</p>
+
+<div class="squares">Click 3</div>
+<div class="squares">Click 2</div>
+<div class="squares">Click 1</div>
+
+<div id="start">
+	<button id="go">GO</button>
+	</div>
+	<div class="left">
+		<p>this is stripe:</p>
+		
+		<img class="cat" src="images/stripe.jpg" width="50%" height="50%">
+		<img class="painting" src="images/tree.jpg" width="50%" height="50%">
+
+	</div>
+
+	<div class="right">
+		<div class="clickme">
+			<p>this is me. click here.</p>
+		</div>
+	
+		<img class="me" src="images/adrienne.jpg" width="50%" height="50%">
+	
+		<p>this is a palm tree. click it!</p>
+	
+		<img class="palm" src="images/palmtree.jpg" width="50%" height="50%">
+	</div>
+	
+</div>
+</body>
+</html>
+
+
+<script>
+$(document).ready( function() {
+
+
+$( ".squares" ).click(function() {
+  $( this ).hide( 2000, function() {
+    $( this ).remove();
+  });
+});
+
+$("#start").click( function () {
+	
+$(".cat").fadeOut(4000);
+$(".cat").fadeIn(4000) ;
+
+$(".me") .slideUp(4000);
+$(".me") .slideDown(4000);
+
+$(".cat").fadeOut(4000);
+$(".cat").fadeIn(4000) ;
+
+$(".painting").animate ({
+	opacity: 0.25,
+	left: "70%",
+ } , 5000) ; 
+
+$(".palm") .click( function () {
+	alert("Good Job!");
+$(".clickme").click( function () {
+  $(".me" ).toggle("slow", function() {
+   });
+});
+
+})
+})
+
+})
+</script>
+

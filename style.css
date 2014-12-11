@@ -1,0 +1,32 @@
+body {
+	margin: 0 auto;
+	width: 800px;
+}
+
+.left {
+	float: left;
+	width: 400px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.cat {
+	margin-bottom: 50px;
+}
+
+.right {
+	float: right;
+	width: 400px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.squares {
+	background: red;
+    width: 70px;
+    height: 30px;
+    margin: 2px;
+    text-align: center;
+	float: right;
+}
+
